@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Đang chuyển hướng về ứng dụng...</title>
+    <script>
+        // Lấy toàn bộ tham số trả về từ Asana (ví dụ: ?code=...&state=...)
+        const queryString = window.location.search;
+        
+        // Chuyển hướng trực tiếp về app của bạn thông qua Custom Scheme đã đăng ký trong Info.plist
+        window.location.href = "colorcalendar://oauth" + queryString;
+    </script>
+</head>
+<body>
+    <p>Đang quay lại ứng dụng ColorCalendar, vui lòng đợi trong giây lát...</p>
+</body>
+</html>
